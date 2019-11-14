@@ -1,13 +1,12 @@
 import React from 'react';
 import { Alert } from 'react-native';
+import { API_KEY } from './constant';
 
-import Loading from './Loading';
-import Weather from './Weather';
+import Loading from './components/Loading';
+import Weather from './components/Weather';
 
 import * as Location from 'expo-location';
 import axios from 'axios';
-
-const API_KEY = '4de275e9c1dc478d273652025b925b02';
 
 export default class extends React.Component {
   state = {
