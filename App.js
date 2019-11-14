@@ -23,6 +23,7 @@ export default class extends React.Component {
     this.setState({
       isLoading: false,
       condition: weather[0].main,
+      description: weather[0].description,
       temp,
     });
   }
@@ -44,7 +45,7 @@ export default class extends React.Component {
   }
 
   render() {
-    const { isLoading, condition, temp } = this.state;
-    return isLoading ? <Loading/> : <Weather condition={condition} temp={Math.round(temp)}/>;
+    const { isLoading, condition, description, temp } = this.state;
+    return isLoading ? <Loading/> : <Weather condition={condition} description={description} temp={Math.round(temp)}/>;
   }
 }

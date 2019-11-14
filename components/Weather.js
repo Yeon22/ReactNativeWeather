@@ -7,9 +7,7 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 import { WEATHERS, WEATHER_OPTIONS, ICON_SIZE, ICON_COLOR } from '../constant';
 
-
-
-export default function Weather({temp, condition}) {
+export default function Weather({temp, condition, description}) {
   return (
     <LinearGradient
         colors={WEATHER_OPTIONS[condition].gradient}
@@ -23,7 +21,8 @@ export default function Weather({temp, condition}) {
         <Text style={styles.temp}>{temp}º</Text>
       </View>
       <View style={styles.halfContainer}>
-
+        <Text style={styles.title}>{condition}</Text>
+        <Text style={styles.subtitle}>{description}</Text>
       </View>
     </LinearGradient>
   );
@@ -48,5 +47,16 @@ const styles = StyleSheet.create({
   temp: {
     fontSize: 36,
     color: "white"
+  },
+  title: {
+    color: "white",
+    fontSize: 45,
+    fontWeight: "300",
+    marginBottom: 10
+  },
+  subtitle: {
+    fontWeight: "600",
+    color: "white",
+    fontSize: 24
   }
 });

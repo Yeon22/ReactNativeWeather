@@ -45,7 +45,7 @@ const WEATHER_STYLES = {
   },
   SUNNY: {
     iconName: "weather-sunny",
-    gradient: ["#ede574", "#e1f5c4"]
+    gradient: ["#b2fefe", "#0ed2f7"]
   },
 };
 
