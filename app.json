@@ -25,6 +25,8 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": "This is React Native Application with expo-cli and openweather API",
+    "githubUrl": "https://github.com/Yeon22/Weather-Mobile-App.git"
   }
 }

@@ -10,12 +10,12 @@ import { WEATHERS, WEATHER_OPTIONS, ICON_SIZE, ICON_COLOR } from '../constant';
 export default function Weather({temp, condition, description}) {
   return (
     <LinearGradient
-        colors={WEATHER_OPTIONS["Haze"].gradient}
+        colors={WEATHER_OPTIONS[condition].gradient}
         style={styles.container}>
       <StatusBar barStyle="light-content"/>
       <View style={styles.halfContainer}>
         <MaterialCommunityIcons
-            name={WEATHER_OPTIONS["Haze"].iconName}
+            name={WEATHER_OPTIONS[condition].iconName}
             size={ICON_SIZE}
             color={ICON_COLOR}/>
         <Text style={styles.temp}>{temp}º</Text>
