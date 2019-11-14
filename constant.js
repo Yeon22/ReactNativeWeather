@@ -21,11 +21,11 @@ const WEATHERS = [
 const WEATHER_STYLES = {
   THUNDERSTORM: {
     iconName: "weather-lightning",
-    gradient: ["#003973", "#e5e5be"]
+    gradient: ["#e5e5be", "#003973"]
   },
   DRIZZLE: {
     iconName: "weather-hail",
-    gradient: ["#076585", "#fff"]
+    gradient: ["#67b26f", "#4ca2cd"]
   },
   RAIN: {
     iconName: "weather-pouring",
@@ -33,7 +33,7 @@ const WEATHER_STYLES = {
   },
   SNOW: {
     iconName: "weather-snowy",
-    gradient: ["#2980b9", "#6dd5fa"]
+    gradient: ["#74ebd5", "#acb6e5"]
   },
   ATMOSPHERE: {
     iconName: "weather-fog",
@@ -45,7 +45,7 @@ const WEATHER_STYLES = {
   },
   SUNNY: {
     iconName: "weather-sunny",
-    gradient: ["#b2fefe", "#0ed2f7"]
+    gradient: ["#fdc830", "#f37335"]
   },
 };
 
