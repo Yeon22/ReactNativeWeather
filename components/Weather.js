@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, StatusBar } from 'react-native';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled from 'styled-components/native';
 
 import { LinearGradient } from 'expo-linear-gradient';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
