@@ -23,7 +23,7 @@
     "styled-components": "^4.4.1"
   },
   "devDependencies": {
-    "@expo/webpack-config": "^0.10.5",
+    "@expo/webpack-config": "^0.17.3",
     "babel-preset-expo": "^7.1.0"
   },
   "private": true
